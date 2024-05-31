@@ -1,0 +1,194 @@
+
+/*ESTILOS MENU DE NAVEGACION*/
+/*Configuracion del menu de navegacion, color y anchura*/
+.container-fluid{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+}
+
+
+/*CONFIGURACION DEL DIV 1 DE INICIO*/
+/*Imagen de fondo para que se vea en toda la pntalla */
+.inicio1{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: rgb(2, 53, 129);
+    background-image: url(imagenes/fondo3.jfif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no repeat;
+    opacity: 92%;
+}
+/*Configuracion del titulo y su div*/
+.inicio1 h2{
+    margin-top: 5%;/*margen superior de div*/
+    margin-bottom: 5%;
+    color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/*Configuracion del texto dentro del div incio*/
+.inicio1 p{
+    color: rgb(241, 234, 234); 
+    font-size:18px; /*tamaño texto*/
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+}
+/*Configruacion del boton dentro de inicio1*/
+.btn-home{
+    margin-bottom: 9%; /*margen inferior del div 1, termina en el botn*/
+    padding: 10px; /* Ajusta el relleno para controlar el tamaño del botón */
+    font-family: 'Times New Roman', Times, serif; /*Tipo de texto en el boton*/
+    background-color: #3da741; /*fondo del boton*/
+    color: white;
+    opacity: 80%;
+    border-radius: 10px;
+}
+.btn-home:hover{
+    opacity: 100%; /*opacidad al pasar mouse*/
+    color: rgb(255, 255, 255); /*Color de texto al pasar el mouse*/
+}
+/*Configuracoin del imagen al lado del texto*/
+.col-sm-4{
+    margin-top: 80px; 
+    padding: 50px 20px 20px 20px;
+}
+
+
+
+/*ESTILOS DIV SEPARACION*/
+/*Color de fondo y opacidad*/
+.separacion-div{
+    background-color: #680202;
+    opacity: 90%;
+}
+/*Frase de slogan*/
+.slogan{
+    padding-top: 5%;
+    padding-bottom: 3%;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+/*Estilo Iconos*/
+.separacion-div i{
+    font-size: 55px;
+    color: aliceblue;
+    margin-bottom: 5%;
+}
+/*Estilo parrafo de iconos*/
+.separacion-div p{
+    font-size:18px;
+    padding-top: 18px;
+    color: rgb(206, 206, 207);
+}
+
+
+
+/*****************/
+/*Contenido para div 2, carrusel de servicios de soporte tecnico*/
+/*Configuracion de fondo del carrusel en general*/
+.carousel{
+    height: 500px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+/*Configuraicon de contenido del carrusel*/
+.carousel-item{
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*Estilos para los titulos de cada contenido del carrusel*/
+.carousel-content-0 h3{
+    padding-top: 5%;
+    padding-bottom: 3%;
+    color: rgb(14, 107, 189);
+}
+.carousel-content-1 h3{
+    padding-top: 5%;
+    padding-bottom: 3%;
+    color: rgb(14, 107, 189);
+}
+.carousel-content-2 h3{
+    padding-top: 5%;
+    padding-bottom: 3%;
+    color: rgb(14, 107, 189);
+}
+.carousel-content-3 h3{
+    padding-top: 5%;
+    padding-bottom: 3%;
+    color: rgb(14, 107, 189);
+}
+.carousel-content-4 h3{
+    padding-top: 5%;
+    padding-bottom: 3%;
+    color: rgb(14, 107, 189);
+}
+.carousel-content-5 h3{
+    padding-top: 5%;
+    padding-bottom: 3%;
+    color: rgb(14, 107, 189);
+}
+.carousel-content-6 h3{
+    padding-top: 5%;
+    padding-bottom: 3%;
+    color: rgb(14, 107, 189);
+}
+.carousel-content-7 h3{
+    padding-top: 5%;
+    padding-bottom: 3%;
+    color: rgb(14, 107, 189);
+}
+.carousel-content-8 h3{
+    padding-top: 5%;
+    padding-bottom: 3%;
+    color: rgb(14, 107, 189);
+}
+
+
+/*EStilos para las imagenes del carrusel*/
+.carousel-content-0 img{
+    margin-top: 50px;
+}
+.carousel-content-1 i{
+    margin-top: 20px;
+    font-size: 150px;
+    color: white;
+}
+.carousel-content-2 img{
+    margin-top: 20px;
+    height: 180px;
+    width: 180px;
+}
+.carousel-content-3 i{
+    margin-top: 20px;
+    font-size: 150px;
+    color: white;
+}
+.carousel-content-4 i{
+    margin-top: 20px;
+    font-size: 150px;
+    color: white;
+}
+.carousel-content-5 img{
+    margin-top: 20px;
+    height: 180px;
+    width: 180px;
+}
+.carousel-content-6 i{
+    margin-top: 20px;
+    font-size: 150px;
+    color: white;
+}
+.carousel-content-7 img{
+    margin-top: 4px;
+    height: 200px;
+    width: 200px;
+}
+.carousel-content-8 img{
+    height: 200px;
+    width: 300px;
+}

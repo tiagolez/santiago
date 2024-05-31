@@ -1,0 +1,361 @@
+nav {
+    background-color: aliceblue;
+}
+
+
+
+/* Estilos globales para todos los elementos */
+* {
+    margin: 0; /* Elimina los márgenes predeterminados */
+    padding: 0; /* Elimina el relleno predeterminado */
+    border: 0; /* Elimina los bordes predeterminados */
+    font-size: 100%; /* Establece el tamaño de fuente al 100% */
+    vertical-align: baseline; /* Alínea verticalmente al elemento con respecto a la línea base */
+  }
+  /* Estilos para el título de la página */
+  title {
+    display: none; /* Oculta el título */
+    background-color: transparent; /* Fondo transparente */
+    color: transparent; /* Texto transparente */
+  }
+  
+  /* Estilos para el cuerpo del documento */
+  body {
+    background-color: #505355 !important; 
+    text-align: center; /* Alinea el texto al centro */
+    font-family: sans-serif; /* Utiliza una fuente de familia sans-serif */
+  }
+  
+  /* Estilos para el encabezado */
+  header {
+    display: flex; /* Usa flexbox para distribuir los elementos */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+  }
+  
+  /* Estilos para la barra de navegación superior */
+  .head {
+    display: flex; /* Usa flexbox para distribuir los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: space-between; /* Distribuye uniformemente los elementos */
+    height: 63px; /* Establece la altura de la barra de navegación */
+    background: #171717; /* Color de fondo */
+    position: fixed; /* Fija la barra de navegación en la parte superior */
+    width: 100%; /* Ancho completo */
+    z-index: 100; /* Capa z para superponer sobre otros elementos */
+  }
+  
+  /* Estilos para el menú desplegable */
+  /* Define el contenedor del menú desplegable */
+  .dropdown {
+    position: relative;
+  }
+  
+  /* Define los estilos para el contenido del menú desplegable */
+  .dropdown-content {
+    display: none;
+    /* Oculta el contenido del menú por defecto */
+    position: absolute;
+    /* Posiciona el menú de forma absoluta */
+    background-color: #171717;
+    /* Color de fondo */
+    min-width: 160px;
+    /* Ancho mínimo del menú */
+    z-index: 1;
+    /* Capa z para superponer el menú sobre otros elementos */
+  }
+  
+  
+  /* Define los estilos para los enlaces dentro del menú desplegable */
+  .dropdown-content a {
+    color: white;
+    /* Color del texto */
+    padding: 12px 16px;
+    /* Espacio de relleno */
+    text-decoration: none;
+    /* Sin decoración de texto */
+    display: block;
+    /* Hace que los enlaces sean elementos de bloque */
+  }
+  
+  /* Define los estilos cuando se pasa el ratón por encima de los enlaces del menú */
+  .dropdown-content a:hover {
+    background-color: #9c0303a2;
+    /* Cambia el color de fondo */
+  }
+  
+  /* Hace que el contenido del menú desplegable sea visible cuando se pasa el ratón por encima del contenedor */
+  .dropdown:hover .dropdown-content {
+    display: block;
+    /* Muestra el contenido del menú */
+  }
+  
+  /* Estilos para la navegación */
+  .navbar {
+    display: flex; /* Usa flexbox para distribuir los elementos */
+    margin-right: 10px; /* Márgenes a la derecha */
+  }
+  
+  /* Estilos para los enlaces de la navegación */
+  .navbar a {
+    display: block; /* Muestra los elementos como bloques */
+    padding: 20px 20px; /* Espacio de relleno */
+    color: aliceblue; /* Color del texto */
+    text-decoration: none; /* Sin decoración de texto */
+    font-size: 20px; /* Tamaño de fuente */
+  }
+  
+  /* Estilos para los enlaces de navegación al pasar el ratón por encima */
+  .navbar a:hover {
+    background: #9c0303a2; /* Cambia el color de fondo al pasar el ratón por encima */
+  }
+  
+  /*Estilos para la imagen del logo*/
+  .Logo img {
+    width: 50px; /* Ajusta el ancho según lo necesites */
+    height: auto; /* Mantiene la proporción de aspecto */
+    margin-right: 10px; /* Agrega margen a la derecha para separar el logo del texto */
+  }
+  
+  /* Estilos para el logotipo */
+  .Logo {
+    display: flex; /* Usa flexbox para alinear verticalmente */
+    align-items: center; /* Centra verticalmente los elementos */
+    margin-left: 30px; /* Márgenes a la izquierda */
+    text-decoration: none; /* Sin decoración de texto */
+    color: aliceblue; /* Color del texto */
+  }
+  
+  /* Estilos para el texto del logotipo */
+  .Logo a {
+    text-decoration: none; /* Sin decoración de texto */
+    color: rgb(255, 255, 255); /* Color del texto */
+    text-transform: uppercase; /* Transforma el texto a mayúsculas */
+    font-size: 20px; /* Tamaño de fuente */
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  
+  /* Estilos para el contenido del encabezado */
+  .header {
+    display: flex; /* Usa flexbox para distribuir los elementos */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+  }
+  
+  /* Estilos para el contenido del encabezado con imagen de fondo */
+  .header {
+    height: 60vh !important; /* Altura del encabezado */
+    background: url(../imagenes/inicio.jfif) no-repeat center; /* Imagen de fondo centrada */
+    background-size: cover; /* Tamaño de fondo que cubre completamente */
+  }
+  
+  /* Estilos para el título */
+  .titulo {
+    color: aliceblue; /* Color del texto */
+    margin-bottom: 40px; /* Margen inferior */
+    font-size: 60px; /* Tamaño de fuente */
+    font-weight: 600; /* Grosor de la fuente */
+    text-transform: uppercase; /* Transforma el texto a mayúsculas */
+  }
+  
+  /*Estilo para iconos de h3*/
+  .portafolios i {
+      font-size: 25px;
+      color: aqua;
+  }
+  /*Estilos pasra los h3*/
+  h3{
+      font-size: 22px;
+      color: aliceblue;
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+  
+  /* Estilos para los párrafos */
+  p {
+    margin-bottom: 40px; /* Margen inferior */
+    font-size: 18px; /* Tamaño de fuente */
+    color: aliceblue; /* Color del texto */
+    padding: 0 100px; /* Relleno horizontal */
+  }
+  
+  /* Estilos para los botones */
+  .btn {
+    display: inline-block; /* Muestra el botón como un elemento en línea */
+    margin-top: 15px; /* Margen superior */
+    padding: 10px 40px; /* Espacio de relleno */
+    border: 2px solid #9c0303a2; /* Borde del botón */
+    color: aliceblue; /* Color del texto */
+    text-decoration: none; /* Sin decoración de texto */
+    background: #9c0303a2; /* Color de fondo */
+  }
+  
+  /* Estilos para los botones al pasar el ratón por encima */
+  .btn:hover {
+    background: none; /* Cambia el color de fondo al pasar el ratón por encima */
+  }
+  
+  /* Estilos para los botones de inicio */
+  .btn-home {
+    margin-top: 20px;
+    display: flex; /* Usa flexbox para distribuir los elementos */
+    justify-content: center; /* Centra horizontalmente los elementos */
+  }
+  
+  /* Estilos para los enlaces dentro de los botones de inicio */
+  .btn-home a {
+    margin: 0 10px; /* Márgenes */
+    text-align: center; /* Alinea el texto al centro */
+  }
+  
+  /* Estilos para el contenido en general */
+  .content {
+    height: 50vh; /* Altura del contenido */
+    display: flex; /* Usa flexbox para distribuir los elementos */
+    flex-direction: column; /* Dirección de la distribución de los elementos */
+    justify-content: center; /* Centra verticalmente los elementos */
+    align-items: center; /* Centra horizontalmente los elementos */
+  }
+  
+  /* Estilos para el contenido con fondo negro */
+  .content-mon {
+    padding: 30px; /* Espacio de relleno */
+    background: #171717; /* Color de fondo */
+  }
+  
+  /* Estilos para el contenido con imagen de fondo */
+  
+  /*
+  .content-net {
+    padding: 30px; /* Espacio de relleno * /
+    background: url(../imagenes/fondo3.jfif) no-repeat center; /* Imagen de fondo centrada * /
+    background-attachment: fixed; /* Fija la imagen de fondo * /
+    background-size: cover; /* Tamaño de fondo que cubre completamente * /
+    text-align: center; /* Alinea el texto al centro * /
+  }
+  */
+  
+  /* Estilos para el contenido con fondo negro */
+  .content-tec {
+    padding: 30px; /* Espacio de relleno */
+    background: #171717; /* Color de fondo */
+  }
+  
+  /* Estilos para el contenido con imagen de fondo */
+  .content-edu {
+      padding: 30px; /* Espacio de relleno */
+      background: url(../imagenes/fondo3.jfif) no-repeat center; /* Imagen de fondo centrada */
+      background-attachment: fixed; /* Fija la imagen de fondo */
+      background-size: cover; /* Tamaño de fondo que cubre completamente */
+      text-align: center; /* Alinea el texto al centro */
+    }
+  
+    /* margen superior para los iconos, que no se peguen con los botones */
+  .content-edu i {
+    margin-top: 25px;
+  }
+  
+  /* Estilos para el pie de pagina */
+  footer {
+    background-color: #333; /* Color de fondo del footer */
+    color: white; /* Color del texto */
+    padding: 20px 0; /* Espacio de relleno */
+    text-align: center; /* Alineación del texto al centro */
+    width: 100%; /* Ancho completo */
+    bottom: 0; /* Lo coloca al final de la página */
+    font-family: italic;
+  }
+  footer p {
+    margin-bottom: 20px; /* Espacio inferior entre el texto y los iconos */
+  }
+  
+  footer i {
+    font-size: 14px; /* Tamaño de los iconos */
+    margin-right: 10px; /* Espacio entre los iconos y texto*/
+    margin-left: 10px; /*Espacio izq  entre iconos*/
+    color: #ff0000a2; /*color del icono*/
+  }
+  
+  /* Estilos para el botón de WhatsApp */
+  .whatsapp-btn {
+    position: fixed; /* Posición fija para mantenerlo en la pantalla */
+    bottom: 25px; /* Espacio desde la parte inferior */
+    right: 30px; /* Espacio desde la parte derecha */
+    z-index: 999; /* Coloca el botón sobre otros elementos */
+  }
+  
+  .whatsapp-btn img {
+    width: 60px; /* Ancho del botón de WhatsApp */
+    height: auto; /* Altura automática para mantener la proporción */
+  }
+  
+  /* Cambia el color al pasar el mouse sobre el botón de WhatsApp */
+  .whatsapp-btn img:hover {
+      filter: brightness(85%); /* Reduce el brillo del color */
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  /* Estilos para el formulario */
+  
+  /* Estilo para el título */
+  .titulo_form {
+      font-weight: bold;
+      color: #ffffff;
+      font-size: 22px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+  
+  /* Estilo para el párrafo */
+  .texto_form {
+    color: #ffffff; /* Puedes cambiar este color según tus preferencias */
+  }
+  
+  .formulario {
+    padding: 30px; /* Espacio de relleno */
+    background: #171717; /* Color de fondo */
+  }
+  
+  
+  /* Estilos para los campos de entrada */
+  .formulario input[type="text"],
+  .formulario input[type="email"],
+  .formulario input[type="tel"],
+  .formulario select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Para incluir el padding y el borde en el ancho total */
+  }
+  
+  /* Estilos para la etiqueta */
+  .formulario label {
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  /* Estilos para el botón de enviar */
+  .formulario input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Cambio de color al pasar el ratón sobre el botón */
+  .formulario input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
